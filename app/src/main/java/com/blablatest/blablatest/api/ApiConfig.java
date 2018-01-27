@@ -6,5 +6,5 @@ package com.blablatest.blablatest.api;
 
 public class ApiConfig {
     //TODO ENDPOINT
-    public static final String BASE_URL = "";
+    public static final String BASE_URL = "https://www.ripple-ser-main.com";
 }

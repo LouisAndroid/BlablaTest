@@ -1,5 +1,6 @@
 package com.blablatest.blablatest.base;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 public abstract class BaseFragment<T extends IPresenter> extends DialogFragment implements IView {
 
 
+    protected ProgressDialog progressDialog;
     protected T mPresenter;
     protected View mView;
 
@@ -25,6 +27,7 @@ public abstract class BaseFragment<T extends IPresenter> extends DialogFragment 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mPresenter.attachView(this);
         initEventAndData();
     }
 

@@ -1,5 +1,6 @@
 package com.blablatest.blablatest.base;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,8 +12,7 @@ import java.util.List;
 public abstract class BaseActivity<T extends IPresenter> extends AppCompatActivity implements IView {
 
     protected T presenter;
-
-
+    protected ProgressDialog progressDialog;
     private int resId;
     protected List<Fragment> fragmentBackStack;
     private boolean isAnimationRunning = false;

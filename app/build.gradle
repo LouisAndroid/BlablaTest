@@ -25,7 +25,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.1'
 
     /*rx-android-java*/
     api 'io.reactivex:rxjava:+'
@@ -37,4 +37,8 @@ dependencies {
     api 'com.squareup.retrofit2:converter-gson:+'
     api 'com.squareup.retrofit2:adapter-rxjava:+'
     api 'com.google.code.gson:gson:+'
+    compile 'com.google.android.gms:play-services:11.8.0'
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
 }
